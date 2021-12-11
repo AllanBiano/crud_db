@@ -1,10 +1,9 @@
 import psycopg2
 
 def create_table():
-    """ create tables in the PostgreSQL database"""
     create_table =  """CREATE TABLE table_name (
-                     col1 SERIAL PRIMARY KEY,
-                     col2 VARCHAR(255) NOT NULL
+                        col1 SERIAL PRIMARY KEY,
+                        col2 VARCHAR(255) NOT NULL
                     )"""
     conn = None
     try:
